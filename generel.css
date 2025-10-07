@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+  color: #1a1a1a;
+  background-color: #eaf5f5;
+}
+
+h1,
+h2,
+h3 {
+  color: #164b4b;
+}
