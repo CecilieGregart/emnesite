@@ -10,3 +10,215 @@ h2,
 h3 {
   color: #164b4b;
 }
+
+/* ---------------- Footer ---------------- */
+.footer {
+  background-color: #87caac;
+  color: #0f2f2d;
+  padding: 60px 80px;
+  font-family: "Lora", serif;
+}
+
+/* Centrer alt vertikalt */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* Venstre kolonne */
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  max-width: 320px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 28px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Midterste kolonner */
+.footer-links-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  min-width: 400px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-links h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0f2f2d;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #0f2f2d;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Højre kolonne – Nyhedsbrev */
+.footer-newsletter {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-newsletter h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.newsletter-btn {
+  width: 100%;
+  background-color: #4b9a91;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter-btn:hover {
+  background-color: #3b857d;
+  transform: translateY(-2px);
+}
+/* ik kikke videre !!! */
+.footer-links a {
+  pointer-events: none;
+  cursor: default;
+}
+/* -------- Mobilversion -------- */
+@media (max-width: 850px) {
+  .footer {
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* Centrer alt fælles indhold */
+  .footer-left,
+  .footer-newsletter {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left p {
+    max-width: 90%;
+    margin: 10px auto 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  /* Nyhedsbrev */
+  .footer-newsletter {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* "Virksomhed" + "Hjælp" side om side */
+  .footer-links-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .footer-links {
+    align-items: flex-start;
+  }
+
+  .footer-links h4 {
+    margin-bottom: 8px;
+  }
+
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+}
