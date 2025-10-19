@@ -11,13 +11,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #87caac;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-
+body {
+  font-family: "Lora", serif;
+}
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 
 nav {
@@ -43,14 +45,14 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #333333;
+  color: #0f2f2d;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
 }
 
 .menu a:hover {
-  color: #ff0000;
+  color: #329dce;
 }
 
 .burger {
@@ -63,7 +65,7 @@ nav {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  background-color: rgb(0, 0, 0);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -111,5 +113,945 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+}
+/* ******** Index.html ********** */
+
+/* Knapper */
+.button {
+  display: inline-block;
+  background-color: #a3cbee;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-family: "Lora", serif;
+}
+.button:hover {
+  background-color: #329dce;
+}
+
+/* første billede øverst */
+.hero {
+  min-height: 100vh; /* fylder hele skærmen */
+  background-color: #cedeea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* andet billede + tekst */
+.intro {
+  min-height: 100vh;
+  background-color: #a0d7be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+.intro-image {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.intro-text {
+  max-width: 500px;
+  color: #113331;
+  line-height: 1.8;
+}
+.intro-text h1 {
+  color: #1a4f4a;
+  margin-bottom: 15px;
+}
+
+/* De tre billeder i midten */
+.image-row {
+  min-height: 100vh;
+  background-color: #8bd2f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+.image-grid img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sektion med ikoner og bokse */
+.info-sektion {
+  min-height: 100vh;
+  background-color: #bfe1ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Bokse under ikonerne */
+.info-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+.info-box {
+  text-align: center;
+  width: 270px;
+  background-color: #8bd2f0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Ikoner i boksene */
+.info-box img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Overskrifter og tekst i boksene */
+.info-box h3 {
+  color: #1a4f4a;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.info-box p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .intro-image {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-grid img {
+    width: 90%;
+    height: auto;
+  }
+
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .info-box {
+    width: 85%;
+  }
+
+  .info-box img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* ******** Platforme.html ********** */
+
+/* intro øverst på platform-siden */
+.intro-platforme {
+  text-align: center;
+  background-color: #aee9d8;
+  padding: 80px 20px;
+}
+
+.intro-platforme h1 {
+  color: #1a4f4a;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.intro-platforme p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* de tre knapper med platformene */
+.platform-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.platform-box {
+  background-color: #8bd2f0;
+  border-radius: 12px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.platform-box h2 {
+  color: #1a4f4a;
+  margin-bottom: 10px;
+}
+
+/* knapper på bokse */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #2b6e73;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* generel opsætning af sektioner */
+.platform {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform h2 {
+  font-size: 2rem;
+  color: #1a4f4a;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* hovedlayout for hver platform */
+.platform-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 350px 1fr;
+  align-items: start;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* kolonner på siderne */
+.left-box,
+.right-box {
+  flex: 1;
+}
+
+/* midten med iPhone og ikoner */
+.center-phone {
+  position: relative;
+  flex: 0 0 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* selve telefonbilledet */
+.phone {
+  width: 240px;
+  border: none;
+  background: transparent;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* snapchat – telefoner overlapper */
+.snapchat .center-phone {
+  position: relative;
+}
+
+.snapchat .center-phone img[src*="snapphone1"] {
+  position: relative;
+  z-index: 2; /* forrest */
+}
+
+.snapchat .center-phone img[src*="snapphone2"] {
+  position: absolute;
+  z-index: 1;
+  left: -26px;
+  top: 12px;
+  transform: scale(0.94);
+  opacity: 0.9;
+}
+
+/* infobokse til tekst */
+.info-box {
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+/* "hvad er" boks  */
+.hvad-er-box {
+  width: 100%;
+  max-width: 700px; /* bredere */
+  padding: 40px 45px; /* mere luft */
+  border-radius: 18px;
+  font-size: 1rem;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+/* tekst i bokse */
+.info-box h3 {
+  color: #1a4f4a;
+  margin-bottom: 8px;
+}
+
+.info-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.info-box li {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* små ikoner rundt om telefon */
+.icon {
+  position: absolute;
+  width: 55px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* placering af ikoner på siderne */
+.instagram .icon1 {
+  top: 10%;
+  left: 10%;
+}
+.instagram .icon2 {
+  bottom: 10%;
+  right: 10%;
+}
+.tiktok .icon1 {
+  top: 10%;
+  left: -10%;
+}
+.tiktok .icon2 {
+  bottom: 5%;
+  right: -10%;
+}
+.snapchat .icon1 {
+  top: 5%;
+  left: -10%;
+}
+.snapchat .icon2 {
+  top: 40%;
+  right: -10%;
+}
+.snapchat .icon3 {
+  bottom: 0;
+  left: -10%;
+}
+
+/* baggrundsfarver for sektioner */
+.instagram {
+  background-color: #fde4e6;
+}
+.tiktok {
+  background-color: #c9b7f3;
+}
+.snapchat {
+  background-color: #f1e071;
+}
+
+/* farver på tekstbokse */
+.instagram .info-box {
+  background-color: #d3e8f6;
+}
+.tiktok .info-box {
+  background-color: #fff8b7;
+}
+.snapchat .info-box {
+  background-color: #fff3b2;
+}
+
+/* farver på "hvad er" boksene */
+.instagram .hvad-er-box {
+  background-color: #d3e8f6;
+}
+.tiktok .hvad-er-box {
+  background-color: #fff8b7;
+}
+.snapchat .hvad-er-box {
+  background-color: #fff3b2;
+}
+
+/* hver sektion fylder hele skærmen */
+.fullheight {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* mobilvisning */
+@media (max-width: 800px) {
+  /* Intro */
+  .intro-platforme {
+    padding: 50px 20px;
+  }
+
+  .intro-platforme h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .intro-platforme p {
+    max-width: 90%;
+    margin: 0 auto 25px;
+    font-size: 0.95rem;
+  }
+
+  /* De tre bokse øverst */
+  .platform-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .platform-box {
+    width: 85%;
+    text-align: center;
+    padding: 25px;
+  }
+
+  /* Sektioner: Instagram, TikTok, Snapchat */
+  .platform-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* sørger for rækkefølge */
+  .center-phone {
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  .phone {
+    width: 200px;
+  }
+
+  /* tekstbokse */
+  .left-box,
+  .right-box {
+    width: 90%;
+  }
+
+  .hvad-er-box {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .info-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .info-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .icon {
+    display: flex;
+  }
+}
+
+/* fjerner baggrund bag telefonbilleder */
+.center-phone img {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+/* ******** Viden.html *********** */
+
+/* intro øverst på siden */
+.intro-viden {
+  text-align: center;
+  background-color: #4e9b88;
+  padding: 100px 20px;
+}
+
+.intro-viden h1 {
+  color: #163d37;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* ikoner med cirkler */
+.icon-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.icon-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #0e2b26;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #ffffff; /* hvid kant */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.icon-circle img {
+  width: 90px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.icon-circle p {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* hover-effekt */
+.icon-circle:hover {
+  transform: scale(1.08);
+}
+
+/* farver på de fire cirkler */
+.circle1 {
+  background-color: #b7dfe7;
+}
+.circle2 {
+  background-color: #aee9d8;
+}
+.circle3 {
+  background-color: #6ec3e6;
+}
+.circle4 {
+  background-color: #3b8bbd;
+}
+
+/* opsætning af sektioner */
+.viden-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 60px;
+}
+
+/* tekst og billede side om side */
+.viden-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* tekstindhold */
+.viden-text {
+  flex: 1;
+  max-width: 500px;
+  line-height: 1.7;
+  color: #0f2f2d;
+}
+
+.viden-text h2 {
+  color: #13463f;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.viden-text p {
+  margin-bottom: 15px;
+}
+
+/* billeder */
+.viden-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.viden-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* baggrundsfarver */
+.fake {
+  background-color: #b7dfe7;
+}
+
+.redigering {
+  background-color: #aee9d8;
+}
+
+.skaermtid {
+  background-color: #6ec3e6;
+}
+
+.algoritmer {
+  background-color: #3b8bbd;
+}
+
+/* hver sektion fylder hele skærmen */
+.fullheight {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* mobilvisning */
+@media (max-width: 800px) {
+  .icon-section {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .viden-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .viden-text,
+  .viden-image img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .viden-text h2 {
+    font-size: 1.3rem;
+  }
+}
+/* ******** Reflektion.html ******** */
+
+/* intro øverst på reflektion-siden */
+.refleksion-intro {
+  background-color: #b7dfe7; /* lysegrøn/blå baggrund */
+  padding: 100px 60px;
+}
+
+.refleksion-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* billede i venstre side */
+.refleksion-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* tekstfelt i højre side */
+.refleksion-text {
+  max-width: 520px;
+  color: #0f2f2d;
+  line-height: 1.7;
+}
+
+.refleksion-text h1 {
+  font-size: 2rem;
+  color: #144d46;
+  margin-bottom: 20px;
+}
+
+/* resultater fra google survey   */
+
+.survey-section {
+  background-color: #6ec3e6;
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.survey-section h2 {
+  color: #144d46;
+  margin-bottom: 60px;
+  font-size: 1.8rem;
+}
+
+/* layout for de to bokse */
+.survey-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* de grønne bokse med grafer og tekst */
+.survey-box {
+  background-color: #c3e9ef;
+  border-radius: 16px;
+  padding: 40px;
+  width: 480px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* overskrift inde i boks */
+.survey-box h3 {
+  background-color: #3b7b73; /* mørk grøn topbar */
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+/* grafer ved siden af hinanden */
+.survey-box .img-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* billeder/grafer */
+.survey-box img {
+  width: 48%;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* tekst under graferne */
+.survey-box p {
+  color: #0f2f2d;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/* ----- vaner og oplevelser ------ */
+
+.vaner-section {
+  background-color: #7ec9e7; /* blågrøn baggrund */
+  padding: 100px 60px;
+}
+
+.vaner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* de to bokse – venstre (grafer) og højre (citattekst) */
+.vaner-left,
+.vaner-right {
+  background-color: #bfe7e8;
+  border-radius: 14px;
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* overskrift i toppen af boksen */
+.vaner-left h3,
+.vaner-right h3 {
+  background-color: #4a7e75;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* de tre grafer */
+.vaner-charts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* venstre kolonne – to grafer ovenpå hinanden */
+.vaner-charts .left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 48%;
+}
+
+/* højre kolonne – den brede graf */
+.vaner-charts .right-chart {
+  width: 48%;
+}
+
+/* billeder/grafer i boksen */
+.vaner-charts img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+/* citater i højre boks */
+.quote {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #0e2b26;
+}
+
+.vaner-right p {
+  color: #0f2f2d;
+  line-height: 1.6;
+}
+
+/* ------- sidste side ------- */
+
+.opsamling-section {
+  background-color: #c8e9d7; /* mintgrøn baggrund */
+  padding: 100px 60px;
+}
+
+.opsamling-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* tekst i venstre side */
+.opsamling-text {
+  max-width: 550px;
+  line-height: 1.7;
+  color: #0f2f2d;
+}
+
+.opsamling-text h2 {
+  color: #144d46;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* billede i højre side */
+.opsamling-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 800px) {
+  .refleksion-wrapper,
+  .opsamling-wrapper,
+  .vaner-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .survey-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .survey-box {
+    width: 90%;
+  }
+
+  .survey-box .img-row {
+    flex-direction: column;
+  }
+
+  .survey-box img {
+    width: 80%;
+  }
+
+  .vaner-charts {
+    flex-direction: column;
+  }
+
+  .vaner-charts .left-col,
+  .vaner-charts .right-chart {
+    width: 100%;
+  }
+
+  .refleksion-text,
+  .opsamling-text {
+    max-width: 100%;
   }
 }
