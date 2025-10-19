@@ -4,24 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Mirror</title>
+    <link rel="icon" type="image/webp" href="logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="generel.css" />
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body style="font-family: 'Lora', serif">
     <header>
       <div class="logo">
-        <a href="/">
+        <a href="index.html">
           <img src="logo.png" alt="Logo" />
         </a>
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Forside</a></li>
           <li><a href="platforme.html">Platforme</a></li>
           <li><a href="viden.html">Viden</a></li>
-          <li><a href="refliktion.html">Refliktion</a></li>
+          <li><a href="reflektion.html">Reflektion</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -32,15 +37,123 @@
     </header>
 
     <main>
-      <h1>Overskrift</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aut
-        ullam quaerat molestiae unde, tenetur nihil quo atque odio quisquam
-        veritatis illo voluptate saepe exercitationem vitae fuga! Iste, ut
-        consequatur?
-      </p>
-    </main>
+      <section class="hero">
+        <img
+          src="billedeforside.jpg"
+          alt="Netværk af mennesker og sociale medier ikoner"
+          class="hero-bg"
+        />
+      </section>
 
+      <section class="intro">
+        <div class="intro-container">
+          <img
+            src="billede2.jpg"
+            alt="Mennesker ved hashtag"
+            class="intro-image"
+          />
+          <div class="intro-text">
+            <h1>Hvordan påvirker sociale medier os?</h1>
+            <p>
+              Sociale medier spiller en stor rolle i vores hverdag, de forbinder
+              os, underholder og inspirerer, men kan også skabe pres og
+              sammenligning. Her kan du udforske, hvordan platforme som TikTok,
+              Instagram og Snapchat påvirker vores vaner, trivsel og syn på os
+              selv.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="image-row">
+        <div class="image-grid">
+          <img src="3.1.jpg" alt="Kommunikation" />
+          <img src="3.2.jpg" alt="Sociale medier" />
+          <img src="3.3.jpg" alt="Digital interaktion" />
+        </div>
+      </section>
+
+      <section class="info-sektion">
+        <div class="info-grid">
+          <div class="info-box">
+            <img src="platformeknap.png" alt="Platform ikon" />
+            <h3>Platforme</h3>
+            <p>
+              Læs om Instagram, TikTok og Snapchat — hvad bruges de til, og
+              hvordan påvirker de os?
+            </p>
+            <a href="platforme.html" class="button">Gå til side</a>
+          </div>
+
+          <div class="info-box">
+            <img src="videnknap.png" alt="Viden ikon" />
+            <h3>Viden</h3>
+            <p>
+              Bliv klogere på fake news, redigering, skærmtid og algoritmer.
+            </p>
+            <a href="viden.html" class="button">Gå til side</a>
+          </div>
+
+          <div class="info-box">
+            <img src="refliktonknap.png" alt="Refleksion ikon" />
+            <h3>Reflektion</h3>
+            <p>
+              Få et indblik i, hvordan sociale medier former unges hverdag —
+              både fællesskab og pres.
+            </p>
+            <a href="reflektion.html" class="button">Gå til side</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="logo.png" alt="Social Mirror logo" class="footer-logo" />
+          <p>
+            Social Mirror – Viden om sociale medier. Vores side giver indsigt i,
+            hvordan digitale platforme påvirker unges liv, og skaber refleksion
+            over fællesskaber, vaner og trivsel. © Social Mirror
+          </p>
+          <div class="social-icons">
+            <a href="#"><img src="facebooklogo.png" alt="Facebook" /></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+
+        <div class="footer-links-wrapper">
+          <div class="footer-links">
+            <h4>Virksomhed</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Hjælp</h4>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Nyhedsbrev</h4>
+          <input
+            type="email"
+            class="newsletter-input"
+            placeholder="Enter your email address"
+          />
+          <button class="newsletter-btn">Tilmeld mig nyhedsbrev</button>
+        </div>
+      </div>
+    </footer>
     <script src="menu.js"></script>
   </body>
 </html>
