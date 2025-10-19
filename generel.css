@@ -160,7 +160,7 @@ h3 {
   cursor: default;
 }
 /* -------- Mobilversion -------- */
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .footer {
     padding: 40px 30px;
     text-align: center;
