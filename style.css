@@ -1026,41 +1026,99 @@ html {
 }
 
 @media (max-width: 800px) {
+  /* Layout: stabler + centrerer sektioner */
   .refleksion-wrapper,
   .opsamling-wrapper,
-  .vaner-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
+  .vaner-wrapper,
   .survey-grid {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin: 0 auto;
   }
 
-  .survey-box {
-    width: 90%;
+  /* Sektion-padding lidt strammere på mobil */
+  .refleksion-intro,
+  .survey-section,
+  .vaner-section,
+  .opsamling-section {
+    padding: 70px 24px;
   }
 
+  /* Billeder: større og centreres */
+  .refleksion-image img,
+  .opsamling-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Bokse: fylder godt, men med luft */
+  .survey-box,
+  .vaner-left,
+  .vaner-right {
+    width: 94%;
+    max-width: 650px;
+    padding: 26px;
+    margin: 0 auto 36px;
+  }
+
+  /* Grafer i survey-boks: én pr. række */
   .survey-box .img-row {
     flex-direction: column;
+    align-items: center;
+    gap: 22px;
   }
-
   .survey-box img {
-    width: 80%;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto;
   }
 
+  /* Vaner-graf-layout: oven på hinanden og fuld bredde */
   .vaner-charts {
     flex-direction: column;
+    align-items: center;
+    gap: 22px;
   }
-
   .vaner-charts .left-col,
   .vaner-charts .right-chart {
     width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
   }
-
+  .vaner-charts img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   .refleksion-text,
   .opsamling-text {
-    max-width: 100%;
+    max-width: 92%;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* Citatboksen: venstrestillet tekst */
+  .vaner-right {
+    text-align: left;
+  }
+  .vaner-right h3 {
+    text-align: center;
+    margin: 0 auto 14px;
+    max-width: 90%;
+  }
+  .quote {
+    font-style: normal;
+    color: #0e2b26;
+    margin-bottom: 14px;
+  }
+  .quote p {
+    margin: 8px 0; /* tættere linjer mellem citaterne */
+    line-height: 1.6;
+    font-size: 1rem;
   }
 }
